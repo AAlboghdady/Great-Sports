@@ -3,27 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		15F68B8729CD04A200EA5A8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68B8629CD04A200EA5A8A /* AppDelegate.swift */; };
 		15F68B8929CD04A200EA5A8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68B8829CD04A200EA5A8A /* SceneDelegate.swift */; };
-		15F68B8B29CD04A200EA5A8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68B8A29CD04A200EA5A8A /* ViewController.swift */; };
-		15F68B8E29CD04A200EA5A8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F68B8C29CD04A200EA5A8A /* Main.storyboard */; };
 		15F68B9029CD04A300EA5A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F68B8F29CD04A300EA5A8A /* Assets.xcassets */; };
 		15F68B9329CD04A300EA5A8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F68B9129CD04A300EA5A8A /* LaunchScreen.storyboard */; };
+		15F68BA129CD070A00EA5A8A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68B9D29CD070A00EA5A8A /* AppCoordinator.swift */; };
+		15F68BA229CD070A00EA5A8A /* ViewsStringNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68B9E29CD070A00EA5A8A /* ViewsStringNames.swift */; };
+		15F68BA329CD070A00EA5A8A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68B9F29CD070A00EA5A8A /* Coordinator.swift */; };
+		15F68BA429CD070A00EA5A8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BA029CD070A00EA5A8A /* Constants.swift */; };
+		15F68BA929CD075200EA5A8A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BA629CD075200EA5A8A /* ApiManager.swift */; };
+		15F68BAA29CD075200EA5A8A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BA729CD075200EA5A8A /* Reachability.swift */; };
+		15F68BAB29CD075200EA5A8A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BA829CD075200EA5A8A /* NetworkRequest.swift */; };
+		15F68BBE29CD079A00EA5A8A /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BB029CD079A00EA5A8A /* PlayersViewModel.swift */; };
+		15F68BC129CD079A00EA5A8A /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F68BB729CD079A00EA5A8A /* PlayerCell.xib */; };
+		15F68BC229CD079A00EA5A8A /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BB829CD079A00EA5A8A /* PlayerCell.swift */; };
+		15F68BC429CD079A00EA5A8A /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BBC29CD079A00EA5A8A /* PlayersViewController.swift */; };
+		15F68BCF29CD081800EA5A8A /* Negative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BC729CD081800EA5A8A /* Negative.swift */; };
+		15F68BD029CD081800EA5A8A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BC829CD081800EA5A8A /* Player.swift */; };
+		15F68BD129CD081800EA5A8A /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BC929CD081800EA5A8A /* Ability.swift */; };
+		15F68BD229CD081800EA5A8A /* Characteristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BCA29CD081800EA5A8A /* Characteristics.swift */; };
+		15F68BD329CD081800EA5A8A /* Team_name_translations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BCB29CD081800EA5A8A /* Team_name_translations.swift */; };
+		15F68BD429CD081800EA5A8A /* Positive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BCC29CD081800EA5A8A /* Positive.swift */; };
+		15F68BD529CD081800EA5A8A /* Name_translations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BCD29CD081800EA5A8A /* Name_translations.swift */; };
+		15F68BD629CD081800EA5A8A /* PlayersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BCE29CD081800EA5A8A /* PlayersResponse.swift */; };
+		15F68BD829CD0DAB00EA5A8A /* Players.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F68BD729CD0DAB00EA5A8A /* Players.storyboard */; };
+		15F68BDC29CD0F3600EA5A8A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BDA29CD0F3600EA5A8A /* UIViewControllerExtension.swift */; };
+		15F68BDD29CD0F3600EA5A8A /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BDB29CD0F3600EA5A8A /* UIStoryboardExtension.swift */; };
+		15F68BDF29CD121600EA5A8A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F68BDE29CD121600EA5A8A /* UIView+Extension.swift */; };
+		A170F029A9E7C4EB0D749AFB /* Pods_Great_Sports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42A7BC41617E13B494D2EB0 /* Pods_Great_Sports.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15F68B8329CD04A200EA5A8A /* Great Sports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Great Sports.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F68B8629CD04A200EA5A8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15F68B8829CD04A200EA5A8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15F68B8A29CD04A200EA5A8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		15F68B8D29CD04A200EA5A8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15F68B8F29CD04A300EA5A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15F68B9229CD04A300EA5A8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15F68B9429CD04A300EA5A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F68B9D29CD070A00EA5A8A /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		15F68B9E29CD070A00EA5A8A /* ViewsStringNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsStringNames.swift; sourceTree = "<group>"; };
+		15F68B9F29CD070A00EA5A8A /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		15F68BA029CD070A00EA5A8A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		15F68BA629CD075200EA5A8A /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		15F68BA729CD075200EA5A8A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		15F68BA829CD075200EA5A8A /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		15F68BB029CD079A00EA5A8A /* PlayersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
+		15F68BB729CD079A00EA5A8A /* PlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		15F68BB829CD079A00EA5A8A /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		15F68BBC29CD079A00EA5A8A /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		15F68BC729CD081800EA5A8A /* Negative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Negative.swift; sourceTree = "<group>"; };
+		15F68BC829CD081800EA5A8A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		15F68BC929CD081800EA5A8A /* Ability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		15F68BCA29CD081800EA5A8A /* Characteristics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characteristics.swift; sourceTree = "<group>"; };
+		15F68BCB29CD081800EA5A8A /* Team_name_translations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team_name_translations.swift; sourceTree = "<group>"; };
+		15F68BCC29CD081800EA5A8A /* Positive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Positive.swift; sourceTree = "<group>"; };
+		15F68BCD29CD081800EA5A8A /* Name_translations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name_translations.swift; sourceTree = "<group>"; };
+		15F68BCE29CD081800EA5A8A /* PlayersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersResponse.swift; sourceTree = "<group>"; };
+		15F68BD729CD0DAB00EA5A8A /* Players.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Players.storyboard; sourceTree = "<group>"; };
+		15F68BDA29CD0F3600EA5A8A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		15F68BDB29CD0F3600EA5A8A /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		15F68BDE29CD121600EA5A8A /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1B7E1B255D34111B402B8BAA /* Pods-Great Sports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Great Sports.release.xcconfig"; path = "Target Support Files/Pods-Great Sports/Pods-Great Sports.release.xcconfig"; sourceTree = "<group>"; };
+		7A6DC672C9204ED3A011296B /* Pods-Great Sports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Great Sports.debug.xcconfig"; path = "Target Support Files/Pods-Great Sports/Pods-Great Sports.debug.xcconfig"; sourceTree = "<group>"; };
+		F42A7BC41617E13B494D2EB0 /* Pods_Great_Sports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Great_Sports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +77,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A170F029A9E7C4EB0D749AFB /* Pods_Great_Sports.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1481E1A402FD543E93CEC4F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F42A7BC41617E13B494D2EB0 /* Pods_Great_Sports.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		15F68B7A29CD04A200EA5A8A = {
 			isa = PBXGroup;
 			children = (
 				15F68B8529CD04A200EA5A8A /* Great Sports */,
 				15F68B8429CD04A200EA5A8A /* Products */,
+				DAB4ABE47B01D4F5BF7B17E7 /* Pods */,
+				1481E1A402FD543E93CEC4F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +113,157 @@
 		15F68B8529CD04A200EA5A8A /* Great Sports */ = {
 			isa = PBXGroup;
 			children = (
-				15F68B8629CD04A200EA5A8A /* AppDelegate.swift */,
-				15F68B8829CD04A200EA5A8A /* SceneDelegate.swift */,
-				15F68B8A29CD04A200EA5A8A /* ViewController.swift */,
-				15F68B8C29CD04A200EA5A8A /* Main.storyboard */,
-				15F68B8F29CD04A300EA5A8A /* Assets.xcassets */,
-				15F68B9129CD04A300EA5A8A /* LaunchScreen.storyboard */,
-				15F68B9429CD04A300EA5A8A /* Info.plist */,
+				15F68BAD29CD078300EA5A8A /* Modules */,
+				15F68BD929CD0F3600EA5A8A /* Extensions */,
+				15F68BA529CD075200EA5A8A /* Networking */,
+				15F68B9B29CD070100EA5A8A /* Helpers */,
+				15F68BAC29CD077100EA5A8A /* Supporting Files */,
 			);
 			path = "Great Sports";
+			sourceTree = "<group>";
+		};
+		15F68B9B29CD070100EA5A8A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BA029CD070A00EA5A8A /* Constants.swift */,
+				15F68B9C29CD070A00EA5A8A /* Coordinators */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		15F68B9C29CD070A00EA5A8A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				15F68B9D29CD070A00EA5A8A /* AppCoordinator.swift */,
+				15F68B9E29CD070A00EA5A8A /* ViewsStringNames.swift */,
+				15F68B9F29CD070A00EA5A8A /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		15F68BA529CD075200EA5A8A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BA629CD075200EA5A8A /* ApiManager.swift */,
+				15F68BA729CD075200EA5A8A /* Reachability.swift */,
+				15F68BA829CD075200EA5A8A /* NetworkRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		15F68BAC29CD077100EA5A8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15F68B9129CD04A300EA5A8A /* LaunchScreen.storyboard */,
+				15F68B8629CD04A200EA5A8A /* AppDelegate.swift */,
+				15F68B8829CD04A200EA5A8A /* SceneDelegate.swift */,
+				15F68B8F29CD04A300EA5A8A /* Assets.xcassets */,
+				15F68B9429CD04A300EA5A8A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15F68BAD29CD078300EA5A8A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BAE29CD078C00EA5A8A /* Players */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		15F68BAE29CD078C00EA5A8A /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BB129CD079A00EA5A8A /* Models */,
+				15F68BAF29CD079A00EA5A8A /* ViewModels */,
+				15F68BB529CD079A00EA5A8A /* Views */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		15F68BAF29CD079A00EA5A8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BB029CD079A00EA5A8A /* PlayersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		15F68BB129CD079A00EA5A8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BC629CD081800EA5A8A /* PlayersResponse */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15F68BB529CD079A00EA5A8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BB629CD079A00EA5A8A /* Cells */,
+				15F68BB929CD079A00EA5A8A /* StoryBoard */,
+				15F68BBB29CD079A00EA5A8A /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15F68BB629CD079A00EA5A8A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BB729CD079A00EA5A8A /* PlayerCell.xib */,
+				15F68BB829CD079A00EA5A8A /* PlayerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		15F68BB929CD079A00EA5A8A /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BD729CD0DAB00EA5A8A /* Players.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		15F68BBB29CD079A00EA5A8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BBC29CD079A00EA5A8A /* PlayersViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		15F68BC629CD081800EA5A8A /* PlayersResponse */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BCE29CD081800EA5A8A /* PlayersResponse.swift */,
+				15F68BC829CD081800EA5A8A /* Player.swift */,
+				15F68BC729CD081800EA5A8A /* Negative.swift */,
+				15F68BC929CD081800EA5A8A /* Ability.swift */,
+				15F68BCA29CD081800EA5A8A /* Characteristics.swift */,
+				15F68BCB29CD081800EA5A8A /* Team_name_translations.swift */,
+				15F68BCC29CD081800EA5A8A /* Positive.swift */,
+				15F68BCD29CD081800EA5A8A /* Name_translations.swift */,
+			);
+			path = PlayersResponse;
+			sourceTree = "<group>";
+		};
+		15F68BD929CD0F3600EA5A8A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15F68BDA29CD0F3600EA5A8A /* UIViewControllerExtension.swift */,
+				15F68BDE29CD121600EA5A8A /* UIView+Extension.swift */,
+				15F68BDB29CD0F3600EA5A8A /* UIStoryboardExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAB4ABE47B01D4F5BF7B17E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A6DC672C9204ED3A011296B /* Pods-Great Sports.debug.xcconfig */,
+				1B7E1B255D34111B402B8BAA /* Pods-Great Sports.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15F68B9729CD04A300EA5A8A /* Build configuration list for PBXNativeTarget "Great Sports" */;
 			buildPhases = (
+				FF402680E1582AD1603EDB17 /* [CP] Check Pods Manifest.lock */,
 				15F68B7F29CD04A200EA5A8A /* Sources */,
 				15F68B8029CD04A200EA5A8A /* Frameworks */,
 				15F68B8129CD04A200EA5A8A /* Resources */,
+				69530F17F1E4FA1434459105 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +304,7 @@
 				};
 			};
 			buildConfigurationList = 15F68B7E29CD04A200EA5A8A /* Build configuration list for PBXProject "Great Sports" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,36 +326,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F68BD829CD0DAB00EA5A8A /* Players.storyboard in Resources */,
 				15F68B9329CD04A300EA5A8A /* LaunchScreen.storyboard in Resources */,
 				15F68B9029CD04A300EA5A8A /* Assets.xcassets in Resources */,
-				15F68B8E29CD04A200EA5A8A /* Main.storyboard in Resources */,
+				15F68BC129CD079A00EA5A8A /* PlayerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69530F17F1E4FA1434459105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Great Sports/Pods-Great Sports-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Great Sports/Pods-Great Sports-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Great Sports/Pods-Great Sports-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF402680E1582AD1603EDB17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Great Sports-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15F68B7F29CD04A200EA5A8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F68B8B29CD04A200EA5A8A /* ViewController.swift in Sources */,
+				15F68BD429CD081800EA5A8A /* Positive.swift in Sources */,
+				15F68BD129CD081800EA5A8A /* Ability.swift in Sources */,
+				15F68BA929CD075200EA5A8A /* ApiManager.swift in Sources */,
+				15F68BA129CD070A00EA5A8A /* AppCoordinator.swift in Sources */,
+				15F68BC429CD079A00EA5A8A /* PlayersViewController.swift in Sources */,
+				15F68BCF29CD081800EA5A8A /* Negative.swift in Sources */,
+				15F68BD629CD081800EA5A8A /* PlayersResponse.swift in Sources */,
+				15F68BA329CD070A00EA5A8A /* Coordinator.swift in Sources */,
+				15F68BDD29CD0F3600EA5A8A /* UIStoryboardExtension.swift in Sources */,
+				15F68BBE29CD079A00EA5A8A /* PlayersViewModel.swift in Sources */,
+				15F68BD029CD081800EA5A8A /* Player.swift in Sources */,
+				15F68BAB29CD075200EA5A8A /* NetworkRequest.swift in Sources */,
 				15F68B8729CD04A200EA5A8A /* AppDelegate.swift in Sources */,
+				15F68BAA29CD075200EA5A8A /* Reachability.swift in Sources */,
+				15F68BA429CD070A00EA5A8A /* Constants.swift in Sources */,
+				15F68BD229CD081800EA5A8A /* Characteristics.swift in Sources */,
 				15F68B8929CD04A200EA5A8A /* SceneDelegate.swift in Sources */,
+				15F68BDF29CD121600EA5A8A /* UIView+Extension.swift in Sources */,
+				15F68BD329CD081800EA5A8A /* Team_name_translations.swift in Sources */,
+				15F68BC229CD079A00EA5A8A /* PlayerCell.swift in Sources */,
+				15F68BD529CD081800EA5A8A /* Name_translations.swift in Sources */,
+				15F68BDC29CD0F3600EA5A8A /* UIViewControllerExtension.swift in Sources */,
+				15F68BA229CD070A00EA5A8A /* ViewsStringNames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		15F68B8C29CD04A200EA5A8A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15F68B8D29CD04A200EA5A8A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		15F68B9129CD04A300EA5A8A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +538,7 @@
 		};
 		15F68B9829CD04A300EA5A8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6DC672C9204ED3A011296B /* Pods-Great Sports.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,10 +546,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9CZVV75ZFL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Great Sports/Info.plist";
+				INFOPLIST_FILE = "Great Sports/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Players;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +567,7 @@
 		};
 		15F68B9929CD04A300EA5A8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7E1B255D34111B402B8BAA /* Pods-Great Sports.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,10 +575,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9CZVV75ZFL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Great Sports/Info.plist";
+				INFOPLIST_FILE = "Great Sports/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Players;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
